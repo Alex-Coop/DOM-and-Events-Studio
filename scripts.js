@@ -23,6 +23,11 @@ window.addEventListener("load", function init () {
 	takeoff = document.getElementById("takeoff")
 	landing = document.getElementById("landing")
 	missionAbort = document.getElementById("missionAbort")
+	up = document.getElementById("up")
+	down = document.getElementById("down")
+	left = document.getElementById("left")
+	right = document.getElementById("right")
+
 //reference HTML id elements
 	flightStatus = document.getElementById("flightStatus")
 	shuttleBackground = document.getElementById("shuttleBackground")
@@ -66,7 +71,26 @@ window.addEventListener("load", function init () {
 	}
 
 //Up,down,left,right clicks:
-	//STOPPED HERE.
+	up.onclick = function() {
+		document.getElementById("up").style.right = 
+			parseInt(document.getElementById('up').style.right) + 10 + 'px';
+	}
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
